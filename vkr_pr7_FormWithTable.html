@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form with table</title>
+</head>
+<body bgcolor="lightpink">
+	<!-- Method= POST means your data is doest not show in URL.(It is secure)
+		 Method= GET means your data is shown in URl.(It is not secure)
+	-->
+	<form action="vkr_pr7_FormWithTable_Submitted.html" method="POST">																															
+		<table align="center" border="4" cellspacing="3x" cellpadding="2x" bgcolor="cornflowerblue">
+		<tr>
+			<td colspan="2"><h3 align="center"><u>Registration Form</u></h3></td>
+			
+		</tr>
+		<tr>
+			<td align="right">Name:</td>
+			<td>
+				<!--<input type="text" name="nm" pattern="[a-zA-z]+" title="Infinity length"-->
+				<input type="text" name="name" required pattern="[a-zA-z]{3,18}" title="Maximum 18 & minimum 3 letters" placeholder="Enter your name">
+			</td>
+		</tr>
+		<tr>
+			<td align="right">Surname:</td>
+			<td>
+				<input type="text" name="sn" required pattern="[a-zA-z]{3,18}" title="Maximum 18 & minimum 3 letters" placeholder="Enter your surname">
+			</td>
+		</tr>
+		<tr>	
+			<td align="right">Password:</td>
+			<td><input type="password" name="pwd" placeholder="Enter your password"></td>
+		</tr>
+		<tr>
+			<td align="right">Email:</td>
+			<td><input type="email" name="em" placeholder="Enter your email"></td>
+		</tr>
+		<tr>
+			<td align="right">Phone Number:</td>
+			<td>
+				<!--<input type="text" name="pn" pattern="[0-9]+" title="Infinity digits"-->
+				<input type="text" name="pn" required pattern="[0-9]{10}" title="Enter not more than 10 digits" placeholder="Enter your phone number">
+			</td>
+		</tr>
+		<tr>		
+			<td align="right">Birthdate:</td>
+			<td><input type="date"></td>
+		</tr>
+		<tr>
+			<td align="right">Gender:</td>
+			<td><input type="radio" name="x">Male
+				<input type="radio" name="x">Female
+			</td>
+		 </tr>
+		<tr>
+			<td align="right">Address:</td>
+			<td><textarea rows="5" cols="45"></textarea></td>
+		</tr>
+		<tr>
+			<td align="right">Country:</td>
+				<td><select>
+						<option hidden>**Select Your Country**</option>
+						<option>India</option>
+						<option>USA</option>
+						<option>Cannada</option>
+						<option>Australia</option>
+						<option>UK</option>
+					</select>
+				</td>	
+		</tr>
+		<tr>
+			<td align="right">Admission Date:</td>
+			<td><input type="datetime-local"></td>
+		</tr>
+		<tr>
+			<td align="right">NO. Of Trials:</td>
+			<td><input type="number" min="1" max="10"></td>
+		</tr>
+		<tr>
+			<td align="right">Languages:</td>
+					<td><input type="checkbox">English
+					    <input type="checkbox">Hindi
+					  	<input type="checkbox">Gujarati
+					</td>
+
+		</tr>
+		<tr>
+			<td align="right">Upload Your Image:</td>
+			<td><input type="file"></td>
+		</tr>
+		<tr>
+				<td colspan="2" align="center">
+					<input type="submit">
+			        <input type="reset">
+			    </td>
+		</tr>
+		</table>
+	</form>
+
+</body>
+</html>
