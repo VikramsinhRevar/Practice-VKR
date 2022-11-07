@@ -1,0 +1,81 @@
+		*{box-sizing: border-box; color: whitesmoke; font-size: 20px; margin: 0; text-shadow: 0px 0px 3px darkgrey;}
+
+		.main1
+		{
+			height: 50%;
+			width: 100%;
+			background: ghostwhite;
+			display: flex;
+			text-align: center;
+			font-size: 25px;
+			font-family: sans-serif;
+			font-weight: bold;
+			line-height: 150px;
+			padding-top: 20px;
+			padding-left:120px;
+
+			
+		}
+		.main1 .p1
+		{
+			height: 260px;
+			width: 28.33%;
+			background: lightgreen;
+			border: 1px ;
+			box-shadow: 0px 0px 2px grey;
+			margin-right: 20px;
+
+		}
+		.main1 .p1 .p11
+		{
+			height: 55%;
+			width: 100%;
+			background: #59605C;
+		}
+		.main1 .p1 .p12
+		{
+			height: 45%;
+			width: 100%;
+			background: white;
+		}
+		.text
+		{
+			padding-top: 16px;
+			font-size: 12px;
+			color: grey;
+			line-height: 20px;
+			text-align: center;
+			text-shadow: 0px 0px 0px;
+
+		}
+		.a1
+		{
+			line-height: 35px;
+			font-size: 11px;
+			color: grey;
+			text-decoration: none;
+			text-shadow: 0px 0px 0px;
+			padding: 2px;
+			font-family: sans-serif;
+			padding-left: 4px;
+			margin-right: 190px;
+			padding-right: 4px;
+			border: 1px solid black;
+			box-shadow: 0px 0px 1px black;
+		}
+		.a2
+		{
+			line-height: 35px;
+			font-size: 11px;
+			color: grey;
+			text-decoration: none;
+			text-shadow: 0px 0px 0px;
+			font-family: sans-serif;
+			padding: 2px;
+			position: relative;
+			right: 190px;
+			padding-left: 4px;
+			border: 1px solid black;
+			padding-right: 4px;
+			box-shadow: 0px 0px 1px black;
+		}
