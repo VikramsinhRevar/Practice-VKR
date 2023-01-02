@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.playbutton
+		{
+			height: 200px;
+			width: 200px;
+			background: blueviolet;
+			margin: 200px auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			border-radius: 50%;
+			z-index: 0;
+		}
+		.ply1
+		{
+			height: 200px;
+			width: 200px;
+			background: palevioletred;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			animation: play1 1.5s infinite;
+		}
+		.ply2
+		{
+			height: 200px;
+			width: 200px;
+			background: blueviolet;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			animation: play2 1.5s infinite;
+		}
+		@keyframes play1
+		{
+			from{transform: scale(1.0);opacity: 1}
+			to{transform: scale(1.3);opacity: 0}
+		}
+		@keyframes play2
+		{
+			from{transform: scale(1.0);opacity: 1}
+			to{transform: scale(1.5);opacity: 0}
+		}
+		.fa-play
+		{
+			color: whitesmoke;
+			font-size: 45px;
+		}
+	</style>
+</head>
+<body bgcolor="whitesmoke">
+	<div class="playbutton">
+		<i class="fa fa-play"></i>
+		<div class="ply1"></div>
+		<div class="ply2"></div>
+	</div>
+
+</body>
+</html>
