@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{margin: 0 ;box-sizing: border-box;}
+		.productcard
+		{
+			height: 350px;
+			width: 250px;
+			background: white;
+			margin: 25px 25px;
+			box-shadow: 0 0 20px black;
+			position: relative;
+			z-index: 0;
+		}
+		/*.productcard .productimage
+		{
+			height: 250px;
+			width: 250px;
+			background: lightgreen;
+		}
+*/		.productcard .view
+		{
+			height: 50px;
+			width: 250px;
+			background: black;
+			color: whitesmoke;
+			text-align: center;
+			line-height: 50px;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+
+			transition: 1s;		
+		}
+		.productcard .info
+		{
+			height: 100px;
+			width: 250px;
+			background: whitesmoke;
+		}
+		.productcard:hover .view
+		{
+			opacity: 1;
+			top: 200px;
+		}
+		.container
+		{
+			border: 5px solid;
+			display: flex;
+			padding: 25px;
+			flex-wrap: wrap;
+		}
+		.productcard .new
+		{
+			background: red;
+			color: white;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 24px;
+			width: 40px;
+			text-align: center;
+		}
+
+		.productcard .productimage
+		{
+			height: 250px;
+			width: 250px;
+			/*background: lightgray;*/
+			position: relative;
+			box-shadow: 0 0 18px black;
+		}
+		.productcard .productimage .front, .back
+		{
+			height: 250px;
+			width: 250px;
+			background: lightsalmon;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 1s;
+			backface-visibility: hidden;
+			z-index: -1;	
+		}
+		.productcard .productimage .front
+		{
+			transform: rotatey(180deg);
+		}
+		.productcard .productimage .back
+		{
+			transform: rotatey(0deg);
+		}
+		.productcard .productimage:hover .back
+		{
+			transform: rotatey(180deg);
+		}
+		.productcard .productimage:hover .front
+		{
+			transform: rotatey(0deg);
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="productcard">
+		<span class="new">NEW</span>
+		<span class="view">QUICK VIEW</span>
+		<div class="productimage">
+			<div class="front">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+			</div>
+			<div class="back">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+			</div>
+		</div>
+		<div class="info">
+			<p style="color: darkred; text-align:center; line-height: 29px; font-size: 18px;">Formal Blue Shirt</p>
+			<p style="color:black; font-size:18px; font-weight: bold; text-align:center;">$45.99 <span style="text-decoration: line-through; color:grey; font-size:18px; font-weight: bold; text-align:center;">$69.71</span></p>
+			<button style="background: darkturquoise; color: white; text-align: center; height: 25px; width:200px; box-shadow: 0 0 10px whitesmoke; text-align: center; margin: 10px 20px;">ADD TO CART</button>
+		</div>
+	</div>
+
+	<div class="productcard">
+		<span class="new">NEW</span>
+		<span class="view">QUICK VIEW</span>
+		<div class="productimage">
+			<div class="front">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" height="100%" width="100%">
+			</div>
+			<div class="back">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" height="100%" width="100%">
+			</div>
+		</div>
+		<div class="info">
+			<p style="color: darkred; text-align:center; line-height: 29px; font-size: 18px;">Gabi Full Sleeve Sweatshirt</p>
+			<p style="color:black; font-size:18px; font-weight: bold; text-align:center;">$45.99 <span style="text-decoration: line-through; color:grey; font-size:18px; font-weight: bold; text-align:center;">$69.71</span></p>
+			<button style="background: darkturquoise; color: white; text-align: center; height: 25px; width:200px; box-shadow: 0 0 10px whitesmoke; text-align: center; margin: 10px 20px;">ADD TO CART</button>
+		</div>
+	</div>
+	<div class="productcard">
+		<span class="new">NEW</span>
+		<span class="view">QUICK VIEW</span>
+		<div class="productimage">
+			<div class="front">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" height="100%" width="100%">
+			</div>
+			<div class="back">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" height="100%" width="100%">
+			</div>
+		</div>
+		<div class="info">
+			<p style="color: darkred; text-align:center; line-height: 29px; font-size: 18px;">Dark Blue Track Pants</p>
+			<p style="color:black; font-size:18px; font-weight: bold; text-align:center;">$45.99 <span style="text-decoration: line-through; color:grey; font-size:18px; font-weight: bold; text-align:center;">$69.71</span></p>
+			<button style="background: darkturquoise; color: white; text-align: center; height: 25px; width:200px; box-shadow: 0 0 10px whitesmoke; text-align: center; margin: 10px 20px;">ADD TO CART</button>
+		</div>
+	</div>
+	<div class="productcard">
+		<span class="new">NEW</span>
+		<span class="view">QUICK VIEW</span>
+		<div class="productimage">
+			<div class="front">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" height="100%" width="100%">
+			</div>
+			<div class="back">
+				<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" height="100%" width="100%">
+			</div>
+		</div>
+		<div class="info">
+			<p style="color: darkred; text-align:center; line-height: 29px; font-size: 18px;">Round Neck Black T-Shirt</p>
+			<p style="color:black; font-size:18px; font-weight: bold; text-align:center;">$45.99 <span style="text-decoration: line-through; color:grey; font-size:18px; font-weight: bold; text-align:center;">$69.71</span></p>
+			<button style="background: darkturquoise; color: white; text-align: center; height: 25px; width:200px; box-shadow: 0 0 10px whitesmoke; text-align: center; margin: 10px 20px;">ADD TO CART</button>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
