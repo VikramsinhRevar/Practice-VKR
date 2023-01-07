@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		a
+		{
+			height: 100px;
+			width: 100px;
+			background: transparent;
+			display: block;
+			transition: 1s;
+			position: relative;
+			transform-style: preserve-3d;
+		}
+		.front
+		{
+			height: 100px;
+			width: 100px;
+			background: darkblue;
+			color: white;
+			font-size: 50px;
+			text-align: center;
+			line-height: 100px;
+			border: 2px solid;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 1s;
+			transform: translateZ(45px);
+		}
+		.back
+		{
+			height: 100px;
+			width: 100px;
+			background: whitesmoke;
+			color: black;
+			font-size: 50px;
+			text-align: center;
+			line-height: 100px;
+			border: 2px solid;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 1s;
+			transform: translateZ(45px);
+		}
+		.back{transform: rotateX(90deg) translateZ(45px);}
+
+		.front1
+		{
+			height: 100px;
+			width: 100px;
+			background: skyblue;
+			color: white;
+			font-size: 50px;
+			text-align: center;
+			line-height: 100px;
+			border: 2px solid;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 1s;
+			transform: translateZ(45px);
+		}
+		.back1
+		{
+			height: 100px;
+			width: 100px;
+			background: whitesmoke;
+			color: black;
+			font-size: 50px;
+			text-align: center;
+			line-height: 100px;
+			border: 2px solid;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 1s;
+			transform: translateZ(45px);
+		}
+		.back1{transform: rotateX(90deg) translateZ(45px);}
+
+		.front2
+		{
+			height: 100px;
+			width: 100px;
+			background: blueviolet;
+			color: white;
+			font-size: 50px;
+			text-align: center;
+			line-height: 100px;
+			border: 2px solid;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 1s;
+			transform: translateZ(45px);
+		}
+		.back2
+		{
+			height: 100px;
+			width: 100px;
+			background: whitesmoke;
+			color: black;
+			font-size: 50px;
+			text-align: center;
+			line-height: 100px;
+			border: 2px solid;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: 1s;
+			transform: translateZ(45px);
+		}
+		.back2{transform: rotateX(90deg) translateZ(45px);}
+
+		a:hover
+		{
+			transform: rotateX(-90deg);
+		}
+	</style>
+</head>
+<body>
+	<a href="">
+		<div class="front">
+			<i class="fa fa-facebook"></i>
+		</div>
+		<div class="back">
+			<i class="fa fa-facebook"></i>
+		</div>
+	</a>
+	<a href="">
+		<div class="front1">
+			<i class="fa fa-twitter"></i>
+		</div>
+		<div class="back1">
+			<i class="fa fa-twitter"></i>
+		</div>
+	</a>
+	<a href="">
+		<div class="front2">
+			<i class="fa fa-instagram"></i>
+		</div>
+		<div class="back2">
+			<i class="fa fa-instagram"></i>
+		</div>
+	</a>
+</body>
+</html>
