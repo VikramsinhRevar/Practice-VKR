@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		.row
+		{
+			height: auto;
+			display: flex;
+			border: 2px solid darkviolet;
+			flex-wrap: wrap;
+		}
+		.row .col
+		{
+			height: 300px;
+			width: 33.33%;
+			border: 2px solid darkred;
+		}
+		@media(min-width:1280px)
+		{
+			.row .col
+			{
+				height: 300px;
+				width: 33.33%;
+				border: 2px solid darkred;
+			}
+		}
+		@media(max-width:900px)
+		{
+			.row .col
+			{
+				height: 300px;
+				width: 50%;
+				border: 3px solid green;
+				background: mediumseagreen;
+			}
+		}
+		@media(max-width:700px)
+		{
+			.row .p1{width: 20%;background: mediumaquamarine;}
+			.row .p2{width: 50%;background: rebeccapurple;}
+			.row .p3{width: 30%;background: greenyellow;}
+						
+		}
+		@media(max-width:500px)
+		{
+			.row .col
+			{
+				width: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="col p1"></div>
+		<div class="col p2"></div>
+		<div class="col p3"></div>
+	</div>
+</body>
+</html>
